@@ -14,5 +14,5 @@ jobs:
       run: |
         echo "${{ github.token }}" | docker login https://docker.pkg.github.com -u ${GITHUB_ACTOR} --password-stdin
         docker pull hello-world:latest
-        docker tag hellow-world:latest docker.pkg.github.com/${{ github.repository }}/hello-world:latest
+        docker tag hello-world:latest docker.pkg.github.com/${{ github.repository }}/hello-world:latest
         docker push docker.pkg.github.com/${{ github.repository }}/hello-world:latest
