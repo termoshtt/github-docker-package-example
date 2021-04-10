@@ -1,5 +1,8 @@
 # github-docker-package-example
-Example to use container registory of GitHub Packages
+
+Example to use container registory of GitHub Packages (docker.pkg.github.com), not GitHub container registry (ghcr.io)
+
+Be sure that docker.pkg.github.com cannot upload using personal access token like ghcr.io . You have to setup GitHub Actions.
 
 GitHub Actions setup
 ---------------------
